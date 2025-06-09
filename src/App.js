@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import FuncComponent from "./components/FuncComponent/FuncComponent";
+import ClassComponent from "./components/ClassComponent/ClassComponent";
+import SecondComponent from "./components/SecondComponent/SecondComponent";
+import SecondClassComponent from "./components/SecondClassComponent/SecondClassComponent";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <FuncComponent name="Slavko" />
+      <ClassComponent number="10" text="bla bla" />
+      <SecondComponent parent="Dolazim s vrha" day="Ponedjeljak" />
+      <SecondClassComponent title="Naslov iz App" year="2025" />
+    </>
   );
 }
 
